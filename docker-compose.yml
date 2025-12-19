@@ -1,0 +1,12 @@
+services:
+  tbamud:
+    build: .
+    ports:
+      - "42067:42067"
+    volumes:
+      - ./lib/plrfiles:/app/lib/plrfiles
+      - ./lib/plrobjs:/app/lib/plrobjs
+      - ./lib/plrvars:/app/lib/plrvars
+      - ./log:/app/log
+    restart: unless-stopped
+

@@ -2,7 +2,7 @@ services:
   tbamud:
     build: .
     ports:
-      - "42067:42067"
+      - "0.0.0.0:42067:42067"
     volumes:
       - ./lib/plrfiles:/app/lib/plrfiles
       - ./lib/plrobjs:/app/lib/plrobjs
